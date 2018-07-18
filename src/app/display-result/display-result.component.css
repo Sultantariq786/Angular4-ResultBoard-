@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    color: #2c6ea7;
+    background: #d4ebff;
+    padding: 5px;
+    margin-bottom: 0;
+    border: 1px solid #e4e4e4;
+}
+
+li.list-group-item {
+    background: #f9e3e3;
+}
+
+li.list-group-item.passed {
+    background-color: #e3f9f2;
+}
+
+.passed-result, .passed-result.failed {
+    background: #bff9d3;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #19a74b;
+}
+
+.passed-result.failed {
+    background: #f9b7b7;
+    color: #e66a6a;
+}

@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Result Board</h1>
+  <div class="passed-result" [ngClass]="{'failed':!passed}">
+    <span *ngIf="passed; else failed">Passed</span>
+    <ng-template #failed>Failed</ng-template>
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let result of results" [ngClass]="{'passed':passed}">{{ result }}</li>
+  </ul>
+  <button class="btn btn-success" style="margin-right: 10px;" [disabled]='!notStarted' (click)="startLoop()">Start Toggle</button>
+  <button class="btn btn-danger" [disabled]='notStarted' (click)="stopLoop()">Stop Toggle</button>
+</div>
+
+
+
+
